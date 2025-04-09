@@ -1,16 +1,15 @@
 <template>
   <div>
-    <h1>Stuff</h1>
-
+    <h1>Projects</h1>
     <div style="margin-bottom: 30px;">
-      The following are some stuff I've made or heavily contributed to.
+      The following are projects that I have developed, either individually or collaboratively.
     </div>
 
     <ProjectsList v-bind:projects="projects" />
 
-    <div style="margin-top: 20px;">
+    <!--<div style="margin-top: 20px;">
       There is more to see on <a target="_blank" href="https://someexternalwebsite.com">some external website</a>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -20,7 +19,7 @@ import ProjectsList from "@/components/ProjectsList.vue";
 import gameProjectsData from "@/data/GameProjectsData.ts";
 
 export default Vue.extend({
-  name: "GameProjects",
+  name: "Projects",
   components: {
     ProjectsList,
   },

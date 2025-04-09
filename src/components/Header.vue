@@ -2,9 +2,8 @@
   <div class="header">
     <div class="nav-bar">
       <router-link to="/">About me</router-link>
-      <router-link to="/game-projects">Stuff</router-link>
-      <router-link to="/other-projects">Other stuff</router-link>
-      <router-link to="/resume">Resume</router-link>
+      <router-link to="/research">Research</router-link>
+      <router-link to="/projects">Projects</router-link>
       <router-link to="/contact">Contact</router-link>
     </div>
   </div>
@@ -26,6 +25,7 @@ export default Vue.extend({
 @import '../css/variables.less';
 
 .header {
+  background-color: @bodyBgColor;
   width: 100%;
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 .router-link-exact-active {
-  border: 0px solid @textColor;
+  border: 0px solid @highlightColor;
   border-bottom-width: 2px;
 }
 

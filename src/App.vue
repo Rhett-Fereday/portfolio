@@ -65,10 +65,19 @@ h1, h2, h3, h4, h5 {
 a {
   color: @textColor;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.6;
 }
-a:hover, .router-link-exact-active {
+.router-link-exact-active {
   opacity: 1;
+}
+
+a:hover {
+  opacity: 1;
+  color: @highlightColor;
+
+  &.router-link-exact-active {
+    color: @textColor;
+  }
 }
 
 h1 {
@@ -101,7 +110,12 @@ h1 {
     padding: 0px 40px 40px 180px;
   }
 
-  .main, .header, .footer {
+  //.main, .header, .footer {
+  //  max-width: 1200px;
+  //  margin: 0 auto;
+  //}
+
+  .main, .footer {
     max-width: 1200px;
     margin: 0 auto;
   }
